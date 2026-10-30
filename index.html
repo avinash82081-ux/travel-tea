@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tea & Custom Delivery | Chhatrapati Sambhajinagar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            amber: '#FF9900',
+                            dark: '#121212',
+                            card: '#1A1A1A',
+                            accent: '#22C55E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #f3f4f6;
+            font-family: 'Poppins', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .glass-nav {
+            background: rgba(18, 18, 18, 0.9);
+            backdrop-filter: blur(12px);
+        }
+        .badge-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.85; transform: scale(1.03); }
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121212;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="pb-28 pt-16">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-neutral-800">
+        <div class="max-w-md mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-yellow-300 flex items-center justify-center text-black font-bold text-xl shadow-lg">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold tracking-wide text-white leading-tight">TRAVEL TEA <span class="text-amber-400 text-xs px-1.5 py-0.5 rounded bg-amber-400/10 border border-amber-400/30">EXPRESS</span></h1>
+                    <p class="text-xs text-neutral-400 flex items-center gap-1">
+                        <i class="fa-solid fa-location-dot text-amber-400 text-[10px]"></i> Chhatrapati Sambhajinagar
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Quick Call Button Header -->
+            <a href="tel:7758981726" class="w-9 h-9 rounded-full bg-neutral-800 border border-neutral-700 flex items-center justify-center text-amber-400 hover:bg-amber-400 hover:text-black transition">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-md mx-auto px-4">
+
+        <!-- Custom Notification Message Box -->
+        <div id="toast-msg" class="hidden fixed top-20 left-1/2 transform -translate-x-1/2 z-50 bg-amber-500 text-black px-4 py-2 rounded-xl font-bold text-xs shadow-xl transition-opacity">
+            <span id="toast-text">Notification</span>
+        </div>
+
+        <!-- Hero Banner / Free Delivery Announcement -->
+        <section class="mt-4 relative rounded-2xl overflow-hidden border border-amber-500/20 bg-gradient-to-r from-neutral-900 via-neutral-800 to-neutral-900 p-5 shadow-xl">
+            <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl"></div>
+            
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold mb-3 badge-pulse">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>FREE DELIVERY UNDER 5 KM</span>
+            </div>
+            
+            <h2 class="text-2xl font-extrabold text-white leading-snug">
+                Chai, Coffee, Khana <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-200">& Anything On-Demand!</span>
+            </h2>
+            
+            <p class="text-xs text-neutral-400 mt-2">
+                Special Free Delivery in: <strong class="text-neutral-200">Balaji Nagar, Sindhi Colony, Mondha</strong>
+            </p>
+
+            <div class="mt-4 flex items-center gap-2 text-[11px] text-amber-300/80 bg-neutral-950/60 p-2 rounded-lg border border-neutral-800">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                <span>Fast Home Delivery All Over Chhatrapati Sambhajinagar</span>
+            </div>
+        </section>
+
+        <!-- Custom Order Banner -->
+        <section class="mt-5 bg-gradient-to-r from-amber-500/20 via-yellow-500/10 to-transparent border border-amber-500/40 rounded-2xl p-4 flex items-center justify-between">
+            <div class="pr-2">
+                <div class="flex items-center gap-1.5 text-xs font-bold text-amber-400">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span>CUSTOM ORDER SERVICE</span>
+                </div>
+                <h3 class="text-sm font-bold text-white mt-1">Kirana, Grocery ya Medical Chahiye?</h3>
+                <p class="text-[11px] text-neutral-400 mt-0.5">Kuch bhi likhkar WhatsApp par mangwayein!</p>
+            </div>
+            <a href="#custom-order-section" class="bg-amber-400 text-black text-xs font-extrabold px-3 py-2.5 rounded-xl shadow-md whitespace-nowrap hover:bg-amber-300 transition flex items-center gap-1">
+                <i class="fa-solid fa-pen-to-square"></i> Order Anything
+            </a>
+        </section>
+
+        <!-- Category Menu Header -->
+        <div class="flex items-center justify-between mt-6 mb-4">
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-utensils text-amber-400"></i> Menu Items
+            </h3>
+            <span class="text-xs text-neutral-400">9 Tasty Specials</span>
+        </div>
+
+        <!-- Menu Items List -->
+        <div class="space-y-4">
+
+            <!-- Item 1: Milk Tea -->
+            <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-4 flex gap-4 items-center relative overflow-hidden group">
+                <div class="w-24 h-24 rounded-xl overflow-hidden bg-neutral-800 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=300&q=80" 
+                         alt="Milk Tea" class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                         data-fallback="Milk+Tea">
+                    <span class="absolute top-1 left-1 bg-amber-500 text-black text-[9px] font-extrabold px-1.5 py-0.5 rounded">CLASSIC</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-base text-white truncate">Milk Tea</h4>
+                        <span class="text-emerald-400 font-extrabold text-base">₹10</span>
+                    </div>
+                    <p class="text-xs text-neutral-400 mt-1">Garam doodh aur tazagi se bhari signature chai.</p>
+                    
+                    <div class="mt-3 flex items-center justify-between">
+                        <span class="text-[10px] text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">Hot Tea</span>
+                        <div class="flex items-center border border-neutral-700 rounded-lg bg-neutral-800 overflow-hidden">
+                            <button onclick="updateQty('milk-tea', -1)" class="w-7 h-7 flex items-center justify-center text-neutral-400 font-bold text-sm hover:text-white">-</button>
+                            <span id="qty-milk-tea" class="w-7 text-center font-bold text-xs text-amber-400">0</span>
+                            <button onclick="updateQty('milk-tea', 1)" class="w-7 h-7 flex items-center justify-center text-white bg-amber-500 font-bold text-sm hover:bg-amber-400">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Black Tea -->
+            <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-4 flex gap-4 items-center relative overflow-hidden group">
+                <div class="w-24 h-24 rounded-xl overflow-hidden bg-neutral-800 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=300&q=80" 
+                         alt="Black Tea" class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                         data-fallback="Black+Tea">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-base text-white truncate">Black Tea</h4>
+                        <span class="text-emerald-400 font-extrabold text-base">₹10</span>
+                    </div>
+                    <p class="text-xs text-neutral-400 mt-1">Light, refreshing black tea boost for energy.</p>
+                    
+                    <div class="mt-3 flex items-center justify-between">
+                        <span class="text-[10px] text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">Hot Tea</span>
+                        <div class="flex items-center border border-neutral-700 rounded-lg bg-neutral-800 overflow-hidden">
+                            <button onclick="updateQty('black-tea', -1)" class="w-7 h-7 flex items-center justify-center text-neutral-400 font-bold text-sm hover:text-white">-</button>
+                            <span id="qty-black-tea" class="w-7 text-center font-bold text-xs text-amber-400">0</span>
+                            <button onclick="updateQty('black-tea', 1)" class="w-7 h-7 flex items-center justify-center text-white bg-amber-500 font-bold text-sm hover:bg-amber-400">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Masala Tea -->
+            <div class="bg-neutral-900 border border-amber-500/30 rounded-2xl p-4 flex gap-4 items-center relative overflow-hidden group">
+                <div class="w-24 h-24 rounded-xl overflow-hidden bg-neutral-800 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?auto=format&fit=crop&w=300&q=80" 
+                         alt="Masala Tea" class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                         data-fallback="Masala+Tea">
+                    <span class="absolute top-1 left-1 bg-amber-500 text-black text-[9px] font-extrabold px-1.5 py-0.5 rounded">SPECIAL</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-base text-white truncate">Masala Tea</h4>
+                        <span class="text-emerald-400 font-extrabold text-base">₹15</span>
+                    </div>
+                    <p class="text-xs text-neutral-400 mt-1">Elaichi, adrak aur khas masalon wali kadak chai.</p>
+                    
+                    <div class="mt-3 flex items-center justify-between">
+                        <span class="text-[10px] text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">Special Tea</span>
+                        <div class="flex items-center border border-neutral-700 rounded-lg bg-neutral-800 overflow-hidden">
+                            <button onclick="updateQty('masala-tea', -1)" class="w-7 h-7 flex items-center justify-center text-neutral-400 font-bold text-sm hover:text-white">-</button>
+                            <span id="qty-masala-tea" class="w-7 text-center font-bold text-xs text-amber-400">0</span>
+                            <button onclick="updateQty('masala-tea', 1)" class="w-7 h-7 flex items-center justify-center text-white bg-amber-500 font-bold text-sm hover:bg-amber-400">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Hot Coffee -->
+            <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-4 flex gap-4 items-center relative overflow-hidden group">
+                <div class="w-24 h-24 rounded-xl overflow-hidden bg-neutral-800 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=300&q=80" 
+                         alt="Hot Coffee" class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                         data-fallback="Hot+Coffee">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-base text-white truncate">Hot Coffee</h4>
+                        <span class="text-emerald-400 font-extrabold text-base">₹30</span>
+                    </div>
+                    <p class="text-xs text-neutral-400 mt-1">Rich aroma & creamy hot coffee blend.</p>
+                    
+                    <div class="mt-3 flex items-center justify-between">
+                        <span class="text-[10px] text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">Beverage</span>
+                        <div class="flex items-center border border-neutral-700 rounded-lg bg-neutral-800 overflow-hidden">
+                            <button onclick="updateQty('hot-coffee', -1)" class="w-7 h-7 flex items-center justify-center text-neutral-400 font-bold text-sm hover:text-white">-</button>
+                            <span id="qty-hot-coffee" class="w-7 text-center font-bold text-xs text-amber-400">0</span>
+                            <button onclick="updateQty('hot-coffee', 1)" class="w-7 h-7 flex items-center justify-center text-white bg-amber-500 font-bold text-sm hover:bg-amber-400">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Cold Coffee -->
+            <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-4 flex gap-4 items-center relative overflow-hidden group">
+                <div class="w-24 h-24 rounded-xl overflow-hidden bg-neutral-800 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=300&q=80" 
+                         alt="Cold Coffee" class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                         data-fallback="Cold+Coffee">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-base text-white truncate">Cold Coffee</h4>
+                        <span class="text-emerald-400 font-extrabold text-base">₹50</span>
+                    </div>
+                    <p class="text-xs text-neutral-400 mt-1">Chilled & thick creamy coffee shake.</p>
+                    
+                    <div class="mt-3 flex items-center justify-between">
+                        <span class="text-[10px] text-cyan-400 bg-cyan-400/10 px-2 py-0.5 rounded">Chilled</span>
+                        <div class="flex items-center border border-neutral-700 rounded-lg bg-neutral-800 overflow-hidden">
+                            <button onclick="updateQty('cold-coffee', -1)" class="w-7 h-7 flex items-center justify-center text-neutral-400 font-bold text-sm hover:text-white">-</button>
+                            <span id="qty-cold-coffee" class="w-7 text-center font-bold text-xs text-amber-400">0</span>
+                            <button onclick="updateQty('cold-coffee', 1)" class="w-7 h-7 flex items-center justify-center text-white bg-amber-500 font-bold text-sm hover:bg-amber-400">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6: Special Maggi -->
+            <div class="bg-neutral-900 border border-amber-500/30 rounded-2xl p-4 flex gap-4 items-center relative overflow-hidden group">
+                <div class="w-24 h-24 rounded-xl overflow-hidden bg-neutral-800 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=300&q=80" 
+                         alt="Special Maggi" class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                         data-fallback="Maggi">
+                    <span class="absolute top-1 left-1 bg-red-500 text-white text-[9px] font-extrabold px-1.5 py-0.5 rounded">POPULAR</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-base text-white truncate">Special Maggi</h4>
+                        <span class="text-emerald-400 font-extrabold text-base">₹50</span>
+                    </div>
+                    <p class="text-xs text-neutral-400 mt-1">Hot, spicy, & masala loaded special maggi.</p>
+                    
+                    <div class="mt-3 flex items-center justify-between">
+                        <span class="text-[10px] text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">Snacks</span>
+                        <div class="flex items-center border border-neutral-700 rounded-lg bg-neutral-800 overflow-hidden">
+                            <button onclick="updateQty('maggi', -1)" class="w-7 h-7 flex items-center justify-center text-neutral-400 font-bold text-sm hover:text-white">-</button>
+                            <span id="qty-maggi" class="w-7 text-center font-bold text-xs text-amber-400">0</span>
+                            <button onclick="updateQty('maggi', 1)" class="w-7 h-7 flex items-center justify-center text-white bg-amber-500 font-bold text-sm hover:bg-amber-400">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 7: Fruit Glass -->
+            <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-4 flex gap-4 items-center relative overflow-hidden group">
+                <div class="w-24 h-24 rounded-xl overflow-hidden bg-neutral-800 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&w=300&q=80" 
+                         alt="Fruit Glass - Fresh Fruits" class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                         data-fallback="Fruit+Glass">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-base text-white truncate">Fruit Glass</h4>
+                        <span class="text-emerald-400 font-extrabold text-base">₹40</span>
+                    </div>
+                    <p class="text-xs text-neutral-400 mt-1">Fresh cut apple, banana, pomegranate mixed fruit glass.</p>
+                    
+                    <div class="mt-3 flex items-center justify-between">
+                        <span class="text-[10px] text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded">Fresh Healthy</span>
+                        <div class="flex items-center border border-neutral-700 rounded-lg bg-neutral-800 overflow-hidden">
+                            <button onclick="updateQty('fruit-glass', -1)" class="w-7 h-7 flex items-center justify-center text-neutral-400 font-bold text-sm hover:text-white">-</button>
+                            <span id="qty-fruit-glass" class="w-7 text-center font-bold text-xs text-amber-400">0</span>
+                            <button onclick="updateQty('fruit-glass', 1)" class="w-7 h-7 flex items-center justify-center text-white bg-amber-500 font-bold text-sm hover:bg-amber-400">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 8: Rice Plate -->
+            <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-4 flex gap-4 items-center relative overflow-hidden group">
+                <div class="w-24 h-24 rounded-xl overflow-hidden bg-neutral-800 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=300&q=80" 
+                         alt="Rice Plate Thali" class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                         data-fallback="Rice+Plate">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-base text-white truncate">Rice Plate Thali</h4>
+                        <span class="text-emerald-400 font-extrabold text-base">₹70</span>
+                    </div>
+                    <p class="text-xs text-neutral-400 mt-1">3 Roti + 2 Sabji + Jeera Rice complete thali.</p>
+                    
+                    <div class="mt-3 flex items-center justify-between">
+                        <span class="text-[10px] text-yellow-400 bg-yellow-400/10 px-2 py-0.5 rounded">Full Meal</span>
+                        <div class="flex items-center border border-neutral-700 rounded-lg bg-neutral-800 overflow-hidden">
+                            <button onclick="updateQty('rice-plate', -1)" class="w-7 h-7 flex items-center justify-center text-neutral-400 font-bold text-sm hover:text-white">-</button>
+                            <span id="qty-rice-plate" class="w-7 text-center font-bold text-xs text-amber-400">0</span>
+                            <button onclick="updateQty('rice-plate', 1)" class="w-7 h-7 flex items-center justify-center text-white bg-amber-500 font-bold text-sm hover:bg-amber-400">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 9: Chicken Biryani -->
+            <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-4 flex gap-4 items-center relative overflow-hidden group">
+                <div class="w-24 h-24 rounded-xl overflow-hidden bg-neutral-800 flex-shrink-0 relative">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=300&q=80" 
+                         alt="Chicken Biryani" class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                         data-fallback="Chicken+Biryani">
+                    <span class="absolute top-1 left-1 bg-amber-500 text-black text-[9px] font-extrabold px-1.5 py-0.5 rounded">BESTSELLER</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-bold text-base text-white truncate">Chicken Biryani</h4>
+                        <span class="text-emerald-400 font-extrabold text-base">₹100</span>
+                    </div>
+                    <p class="text-xs text-neutral-400 mt-1">Authentic Hyderabadi masaledar chicken biryani.</p>
+                    
+                    <div class="mt-3 flex items-center justify-between">
+                        <span class="text-[10px] text-orange-400 bg-orange-400/10 px-2 py-0.5 rounded">Non-Veg</span>
+                        <div class="flex items-center border border-neutral-700 rounded-lg bg-neutral-800 overflow-hidden">
+                            <button onclick="updateQty('chicken-biryani', -1)" class="w-7 h-7 flex items-center justify-center text-neutral-400 font-bold text-sm hover:text-white">-</button>
+                            <span id="qty-chicken-biryani" class="w-7 text-center font-bold text-xs text-amber-400">0</span>
+                            <button onclick="updateQty('chicken-biryani', 1)" class="w-7 h-7 flex items-center justify-center text-white bg-amber-500 font-bold text-sm hover:bg-amber-400">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Special Order Option Section -->
+        <section id="custom-order-section" class="mt-8 bg-neutral-900 border border-amber-500/40 rounded-2xl p-5 relative overflow-hidden">
+            <div class="flex items-center gap-2 mb-2">
+                <span class="w-8 h-8 rounded-full bg-amber-400/20 flex items-center justify-center text-amber-400 font-bold text-sm">
+                    <i class="fa-solid fa-truck-pickup"></i>
+                </span>
+                <h3 class="text-base font-bold text-white">Custom WhatsApp Order</h3>
+            </div>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+                Aapko **Kirana, Grocery, Medical, Food** ya koi bhi samaan mangwana ho, neeche list likhein aur direct WhatsApp par order karein!
+            </p>
+
+            <div class="space-y-3">
+                <div>
+                    <label class="text-[11px] font-semibold text-neutral-300 block mb-1">Aapka Order / Samaan ki list:</label>
+                    <textarea id="custom-item-input" rows="3" placeholder="Eg: 1 Kg Aata, Crocin Tablet, 1 Packet Milk..." class="w-full bg-neutral-950 border border-neutral-700 rounded-xl p-3 text-xs text-white focus:border-amber-400 focus:outline-none placeholder-neutral-600"></textarea>
+                </div>
+                <div>
+                    <label class="text-[11px] font-semibold text-neutral-300 block mb-1">Aapka Pata (Address):</label>
+                    <input type="text" id="custom-address-input" placeholder="Balaji Nagar / Sindhi Colony / Mondha..." class="w-full bg-neutral-950 border border-neutral-700 rounded-xl p-3 text-xs text-white focus:border-amber-400 focus:outline-none placeholder-neutral-600">
+                </div>
+                <button onclick="sendCustomOrderWhatsApp()" class="w-full bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-black font-extrabold py-3 rounded-xl shadow-lg flex items-center justify-center gap-2 transition active:scale-95 text-xs">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Send Custom Order on WhatsApp</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Location & Google Map Section -->
+        <section class="mt-8 bg-neutral-900 border border-neutral-800 rounded-2xl p-4">
+            <div class="flex items-center justify-between mb-3">
+                <div>
+                    <h3 class="text-base font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-map-location-dot text-amber-400"></i> Delivery Zone & Coverage
+                    </h3>
+                    <p class="text-xs text-amber-400 font-semibold">Full Chhatrapati Sambhajinagar Covered!</p>
+                </div>
+                <span class="text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-1 rounded-full">
+                    Free Delivery &lt;5 KM
+                </span>
+            </div>
+
+            <!-- Free delivery area tags & Full city coverage -->
+            <div class="space-y-2 mb-3">
+                <div class="flex flex-wrap gap-1.5 text-xs">
+                    <span class="bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 px-2.5 py-1 rounded-md text-[11px] font-bold"><i class="fa-solid fa-truck-fast text-emerald-400 text-[10px] mr-1"></i>Free &lt;5km: Balaji Nagar</span>
+                    <span class="bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 px-2.5 py-1 rounded-md text-[11px] font-bold"><i class="fa-solid fa-truck-fast text-emerald-400 text-[10px] mr-1"></i>Sindhi Colony</span>
+                    <span class="bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 px-2.5 py-1 rounded-md text-[11px] font-bold"><i class="fa-solid fa-truck-fast text-emerald-400 text-[10px] mr-1"></i>Mondha</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5 text-xs">
+                    <span class="bg-neutral-800 border border-neutral-700 text-neutral-300 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>Cidco</span>
+                    <span class="bg-neutral-800 border border-neutral-700 text-neutral-300 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>Nirala Bazar</span>
+                    <span class="bg-neutral-800 border border-neutral-700 text-neutral-300 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>Jalna Road</span>
+                    <span class="bg-neutral-800 border border-neutral-700 text-neutral-300 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>Kranti Chowk</span>
+                    <span class="bg-neutral-800 border border-neutral-700 text-neutral-300 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>Usmanpura</span>
+                    <span class="bg-neutral-800 border border-neutral-700 text-neutral-300 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>Shahnoorwadi</span>
+                    <span class="bg-neutral-800 border border-neutral-700 text-neutral-300 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>Garkheda</span>
+                    <span class="bg-neutral-800 border border-neutral-700 text-neutral-300 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>TV Centre</span>
+                    <span class="bg-amber-400/10 border border-amber-400/30 text-amber-300 px-2 py-0.5 rounded text-[10px] font-bold">& All Other Areas</span>
+                </div>
+            </div>
+
+            <!-- Embedded Google Map -->
+            <div class="w-full h-48 rounded-xl overflow-hidden border border-neutral-800 relative mt-2 bg-neutral-950">
+                <iframe 
+                    title="Chhatrapati Sambhajinagar Location Map"
+                    src="https://maps.google.com/maps?q=Chhatrapati%20Sambhajinagar%20Balaji%20Nagar&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    class="w-full h-full border-0" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Direct Google Maps App Launcher -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Chhatrapati+Sambhajinagar+Balaji+Nagar" target="_blank" rel="noopener noreferrer" class="mt-3 w-full bg-neutral-800 border border-neutral-700 hover:bg-neutral-700 text-amber-400 text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-2 transition">
+                <i class="fa-solid fa-diamond-turn-right text-emerald-400"></i> Open in Google Maps App
+            </a>
+        </section>
+
+        <!-- Direct Contact Box -->
+        <section class="mt-6 mb-8 bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border border-amber-500/30 rounded-2xl p-4 text-center">
+            <h4 class="text-sm font-bold text-amber-300">Direct Order Hotline</h4>
+            <p class="text-xs text-neutral-400 mt-1">Instant delivery helpline number:</p>
+            <a href="tel:7758981726" class="inline-flex items-center gap-2 mt-3 bg-amber-500 text-black font-extrabold text-base px-6 py-2.5 rounded-xl shadow-lg hover:bg-amber-400 transition">
+                <i class="fa-solid fa-phone"></i> 7758981726
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Floating Checkout Bottom Bar -->
+    <div id="cart-bar" class="fixed bottom-0 left-0 right-0 z-50 p-3 bg-neutral-950/95 backdrop-blur-md border-t border-neutral-800 transition-transform duration-300 transform translate-y-full">
+        <div class="max-w-md mx-auto flex items-center justify-between gap-3">
+            <div>
+                <span id="cart-count" class="text-xs text-amber-400 font-semibold block">0 Items Selected</span>
+                <div class="text-xl font-extrabold text-white leading-tight">
+                    Total: <span id="cart-total" class="text-emerald-400">₹0</span>
+                </div>
+            </div>
+            
+            <button onclick="sendOrderWhatsApp()" class="flex-1 bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold py-3 px-4 rounded-xl shadow-lg flex items-center justify-center gap-2 transition active:scale-95 text-xs">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Order via WhatsApp</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Attach image fallback handler cleanly in standard JavaScript
+        window.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img[data-fallback]');
+            images.forEach(function(img) {
+                img.addEventListener('error', function() {
+                    const fallbackText = img.getAttribute('data-fallback') || 'Item';
+                    img.src = 'https://placehold.co/200x200/1a1a1a/D4AF37?text=' + fallbackText;
+                });
+            });
+        });
+
+        // State management for cart
+        const cart = {
+            'milk-tea': { name: 'Milk Tea', price: 10, qty: 0 },
+            'black-tea': { name: 'Black Tea', price: 10, qty: 0 },
+            'masala-tea': { name: 'Masala Tea', price: 15, qty: 0 },
+            'hot-coffee': { name: 'Hot Coffee', price: 30, qty: 0 },
+            'cold-coffee': { name: 'Cold Coffee', price: 50, qty: 0 },
+            'maggi': { name: 'Special Maggi', price: 50, qty: 0 },
+            'fruit-glass': { name: 'Fresh Fruit Glass', price: 40, qty: 0 },
+            'rice-plate': { name: 'Rice Plate Thali (3 Roti + 2 Sabji + Rice)', price: 70, qty: 0 },
+            'chicken-biryani': { name: 'Chicken Biryani', price: 100, qty: 0 }
+        };
+
+        const phoneNumber = "917758981726"; // Delivery Contact Number
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast-msg');
+            const toastText = document.getElementById('toast-text');
+            if (toast && toastText) {
+                toastText.innerText = String(msg);
+                toast.classList.remove('hidden');
+                setTimeout(function() {
+                    toast.classList.add('hidden');
+                }, 2500);
+            }
+        }
+
+        function updateQty(itemId, change) {
+            const idStr = String(itemId);
+            const changeNum = Number(change);
+            if (Object.prototype.hasOwnProperty.call(cart, idStr)) {
+                const currentItem = cart[idStr];
+                const newQty = currentItem.qty + changeNum;
+                if (newQty >= 0) {
+                    currentItem.qty = newQty;
+                    const qtyElem = document.getElementById('qty-' + idStr);
+                    if (qtyElem) {
+                        qtyElem.innerText = String(newQty);
+                    }
+                    renderCartBar();
+                }
+            }
+        }
+
+        function renderCartBar() {
+            let totalItems = 0;
+            let totalPrice = 0;
+
+            const cartKeys = Object.keys(cart);
+            for (let i = 0; i < cartKeys.length; i++) {
+                const key = cartKeys[i];
+                const item = cart[key];
+                totalItems += item.qty;
+                totalPrice += item.qty * item.price;
+            }
+
+            const cartBar = document.getElementById('cart-bar');
+            const cartCount = document.getElementById('cart-count');
+            const cartTotal = document.getElementById('cart-total');
+
+            if (totalItems > 0) {
+                if (cartCount) cartCount.innerText = totalItems + ' Item' + (totalItems > 1 ? 's' : '') + ' Selected';
+                if (cartTotal) cartTotal.innerText = '₹' + totalPrice;
+                if (cartBar) cartBar.classList.remove('translate-y-full');
+            } else {
+                if (cartBar) cartBar.classList.add('translate-y-full');
+            }
+        }
+
+        // Send Menu Order via WhatsApp
+        function sendOrderWhatsApp() {
+            const orderSummary = [];
+            let total = 0;
+
+            const cartKeys = Object.keys(cart);
+            for (let i = 0; i < cartKeys.length; i++) {
+                const key = cartKeys[i];
+                const item = cart[key];
+                if (item.qty > 0) {
+                    const itemTotal = item.qty * item.price;
+                    orderSummary.push('• ' + item.name + ' x ' + item.qty + ' = ₹' + itemTotal);
+                    total += itemTotal;
+                }
+            }
+
+            if (orderSummary.length === 0) return;
+
+            const message = 
+"☕ *NEW FOOD ORDER - TRAVEL TEA* ☕\n" +
+"--------------------------------\n" +
+orderSummary.join('\n') + "\n" +
+"--------------------------------\n" +
+"💰 *Total Amount: ₹" + total + "*\n" +
+"🚚 *Delivery Area:* Chhatrapati Sambhajinagar\n\n" +
+"_Kripya mera order confirm karein aur delivery time batayein._";
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Send Custom Grocery / Kirana / Medical Order via WhatsApp
+        function sendCustomOrderWhatsApp() {
+            const itemElem = document.getElementById('custom-item-input');
+            const addressElem = document.getElementById('custom-address-input');
+
+            const items = itemElem ? itemElem.value.trim() : '';
+            const address = addressElem ? addressElem.value.trim() : '';
+
+            if (!items) {
+                showToast('Kripya aap jo samaan mangwana chahte hain wo likhein!');
+                return;
+            }
+
+            const message = 
+"🛒 *NEW CUSTOM SPECIAL ORDER* 🛒\n" +
+"--------------------------------\n" +
+"📦 *Items / Samaan List:*\n" +
+items + "\n\n" +
+"📍 *Delivery Address:*\n" +
+(address || 'Chhatrapati Sambhajinagar') + "\n" +
+"--------------------------------\n" +
+"_Kripya ye samaan deliver karein aur total price batayein._";
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
